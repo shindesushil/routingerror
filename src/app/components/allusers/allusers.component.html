@@ -1,0 +1,11 @@
+
+<h1 *ngIf="users.length === 0">
+    No Users Yet!
+</h1>
+
+<ul class="list-group">
+    <li *ngFor="let user of users" class="list-group-item d-flex align-items-center" style="justify-content: space-between;">
+        {{user.name}}
+        <button class="btn btn-primary float-end">View</button>
+    </li>
+</ul>
